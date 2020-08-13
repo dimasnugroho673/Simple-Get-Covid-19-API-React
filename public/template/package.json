@@ -1,0 +1,36 @@
+{
+  "name": "lead-ui-kit-free",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Lead UI Design Kit",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp watch",
+    "vendors": "gulp buildVendors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap4",
+    "lead-ui",
+    "design-kit",
+    "ui-kit",
+    "lead-ui-kit",
+    "lead-bs4-ui-kit"
+  ],
+  "author": "Bootstrapdash",
+  "license": "Bootstrapdash Licence<https://www.BootstrapDash.com/license/>",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "feather-icons": "^4.26.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
+}

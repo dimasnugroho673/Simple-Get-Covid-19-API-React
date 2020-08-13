@@ -1,0 +1,71 @@
+@import "../../../src/vendors/bootstrap/scss/functions";
+@import "../../../src/scss/lead-ui-kit/variables";
+
+.demo-main {
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
+.components-demo {
+    padding-top: 98px;
+    padding-bottom: 70px;
+}
+
+.footer-demo {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.demo-section-title {
+    line-height: 1.29;
+}
+
+.lead-demo {
+
+    margin-bottom: 50px;
+
+    &.btn-demo{
+        .btn {
+            margin-bottom: 15px;
+            margin-right: auto;
+    
+            @media (min-width: 576px){
+                margin-right: 0;
+    
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .avatar {
+        margin-bottom: 14px;
+        flex-shrink: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-typography {
+        padding: 25px 75px;
+
+        * {
+            margin-bottom: 0;
+        }
+
+        &.display {
+            @media(max-width: 767px) {
+                padding: 25px 12px;
+                overflow-wrap: break-word;
+                word-break: break-word;
+            }
+        }
+    }
+}
+
+.carousel-demo-2 {
+    .carousel-inner {
+        background-color: #eadbd1;
+    }
+}

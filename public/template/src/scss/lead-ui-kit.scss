@@ -1,0 +1,39 @@
+// Developed by BootstrapDash (bootstrapdash.com).
+
+// Custom vaiables and fonts
+@import "../vendors/bootstrap/scss/functions";
+@import "../vendors/bootstrap/scss/variables";
+@import "../vendors/bootstrap/scss/mixins";
+
+@import "./lead-ui-kit/variables";
+@import "./lead-ui-kit/font";
+
+// Bootstrap main file
+@import "../vendors/bootstrap/scss/bootstrap.scss";
+
+// Mixins
+@import "./lead-ui-kit/mixins/badge";
+@import "./lead-ui-kit/mixins/button";
+
+// Tyypography
+@import "./lead-ui-kit/typography";
+
+// customised components
+@import "./lead-ui-kit/components/alert";
+@import "./lead-ui-kit/components/avatar";
+@import "./lead-ui-kit/components/badge";
+@import "./lead-ui-kit/components/buttons";
+@import "./lead-ui-kit/components/card";
+@import "./lead-ui-kit/components/dropdown";
+@import "./lead-ui-kit/components/footer";
+@import "./lead-ui-kit/components/forms";
+@import "./lead-ui-kit/components/nav";
+@import "./lead-ui-kit/components/navbar";
+@import "./lead-ui-kit/components/pagination";
+@import "./lead-ui-kit/components/tab";
+
+// Landing Pages
+@import "./lead-ui-kit/components/landing-page";
+
+//  Utilities
+@import "./lead-ui-kit/utilities";

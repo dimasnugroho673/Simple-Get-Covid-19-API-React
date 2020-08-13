@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+    </defs>
+    <g id="Lead-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lead-UI-Kit-Features" transform="translate(-167.000000, -605.000000)">
+            <g id="Group-7" transform="translate(167.000000, 605.000000)">
+                <g id="Group-6">
+                    <g id="Colors-/-Danger" opacity="0.273925781">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                        <g mask="url(#mask-2)" fill="#FE3F3E" id="Rectangle">
+                            <g transform="translate(-10.000000, -10.000000)">
+                                <rect x="0" y="0" width="60.5555556" height="60"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="feather-icons-/-feather" transform="translate(13.333333, 13.333333)" stroke="#FE3F3E" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Group" transform="translate(-0.000000, -0.000000)">
+                            <path d="M11.2444445,6.80000003 C12.546916,5.49752849 12.546916,3.38580488 11.2444445,2.08333334 C9.94197295,0.780861802 7.83024935,0.780861802 6.5277778,2.08333334 L2.77777779,5.83333336 L2.77777779,10.5555556 L7.50000003,10.5555556 L11.2444445,6.80000003 Z" id="Path" stroke-width="2"></path>
+                            <line x1="8.88888893" y1="4.44444446" x2="1.11111112" y2="12.2222223" id="Path" stroke-width="2"></line>
+                            <line x1="9.72222226" y1="8.33333337" x2="5.00000002" y2="8.33333337" id="Path" stroke-width="2"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

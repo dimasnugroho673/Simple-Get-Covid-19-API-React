@@ -1,0 +1,51 @@
+.avatar {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: calc(25px * 0.75);
+    line-height: 1;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.avatar-text {
+    background-color: theme-color('primary');
+    color: color-yiq(theme-color('primary'));
+    font-weight: $font-weight-normal;
+    line-height: 1;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-rounded {
+    border-radius: 50%;
+}
+
+.avatar-square {
+    border-radius: 0;
+}
+
+@each $infix, $size in $avatar-sizes {
+    .avatar-#{$infix} {
+        width: $size;
+        height: $size;
+        font-size: calc(#{$size} * 0.35);
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .avatar-#{$color} {
+        background-color: $value;
+        color: color-yiq($value);
+    }
+}

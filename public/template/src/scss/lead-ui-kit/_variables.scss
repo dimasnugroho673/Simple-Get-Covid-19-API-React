@@ -1,0 +1,149 @@
+// Color system
+$gray: #4e5d78;
+$black: #000000;
+$white: #ffffff;
+
+$colors: (
+    "gray": $gray
+);
+
+$theme-colors: (
+    "primary":    #0684fe,
+    "secondary":  #f5f6f8,
+    "success":    #35ac80,
+    "info":       #5d3fff,
+    "warning":    #f7b731,
+    "danger":     #fe3f3e,
+    "dark":       #131b24,
+    "black":      #000000,
+    "white":      #ffffff,
+);
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:         $black;
+$yiq-text-light:        $white;
+
+$enable-caret: false;
+
+// Spacing additional
+
+$spacers: (
+    20px: 20px,
+    30px: 30px,
+    35px: 35px,
+    40px: 40px
+);
+
+// Border radius;
+
+$border-radius-sm: 0.125rem;
+$border-radius: 0.25rem;
+$border-radius-lg: 0.375rem;
+$border-radius-xl: 0.5rem;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:               $white;
+$body-color:            $black;
+
+$border-color:        #e9ecf1;
+
+$box-shadow: 0 2px 30px 0 rgba(207, 207, 207, 0.5);
+
+//Navbar
+
+$navbar-padding-x: 1rem;
+$navbar-padding-y: 1rem;
+$navbar-light-color: $black;
+$navbar-nav-link-padding-x: 0.937rem;
+$navbar-nav-link-padding-y: 0.5625rem;
+
+// Typography
+
+$font-family-base:      'Nunito Sans';
+
+$font-weight-regular:  400;
+$font-weight-semibold:  600;
+$font-weight-bold:  700;
+
+$font-weight-base:      $font-weight-semibold;
+
+$h1-font-size:          2.5rem;
+$h2-font-size:          2rem;
+$h3-font-size:          1.75rem;
+$h4-font-size:          1.5rem;
+$h5-font-size:          1.25rem;
+$h6-font-size:          1rem;
+
+$headings-font-weight:  $font-weight-semibold;
+
+$headings-line-height: 1.5;
+
+$display1-size:         5.625rem;   
+$display2-size:         5rem;  
+$display3-size:         4rem;
+$display4-size:         3rem;
+
+$display1-weight:       $font-weight-bold;
+$display2-weight:       $font-weight-bold;
+$display3-weight:       $font-weight-bold;
+$display4-weight:       $font-weight-bold;
+
+$text-muted : $gray;
+
+// Forms
+
+$input-padding-y:                       1rem;
+$input-padding-x:                       1.062rem;
+$input-font-size:                       0.75rem;
+$input-font-weight:                     $font-weight-bold;
+$input-line-height:                     1.33;
+
+$input-disabled-bg:                     #f1f1f1;
+
+$input-color:                           $gray;
+$input-border-color:                    #d9dfe7;
+
+$input-border-width:                    1px;
+$input-height-border:                   $input-border-width * 2;
+$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+
+$form-feedback-valid-color:             theme-color("success");
+$form-feedback-invalid-color:           theme-color("danger");
+
+$form-feedback-icon-valid-color:        $form-feedback-valid-color;
+$form-feedback-icon-valid:              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$form-feedback-icon-valid-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+
+$form-feedback-icon-invalid-color:      $form-feedback-invalid-color;
+$form-feedback-icon-invalid:            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$form-feedback-icon-invalid-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+
+$form-validation-states: (
+  "valid": (
+    "color": $form-feedback-valid-color,
+    "icon": $form-feedback-icon-valid
+  ),
+  "invalid": (
+    "color": $form-feedback-invalid-color,
+    "icon": $form-feedback-icon-invalid
+  ),
+  "warning": (
+      "color": theme-color('warning'),
+      "icon": none
+  ),
+);
+
+$avatar-sizes: (
+  "sm": 18px,
+  "md": 25px,
+  "lg": 50px,
+  "xl": 100px
+);
+
+// Tabs
+
+$nav-tabs-border-color: $border-color;
+
+$nav-tabs-border-radius: 0;
+

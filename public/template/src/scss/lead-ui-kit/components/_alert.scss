@@ -1,0 +1,51 @@
+
+.alert {
+    font-size: 14px;
+    line-height: 1.64;
+    padding: 11px 16px;
+
+    .close {
+        opacity: 1;
+        text-shadow: none;
+        font-size: 20px;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+.alert-dismissible {
+    padding-right: 32px;
+}
+
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+      @include alert-variant($value, $value, color-yiq($value));
+
+      .feather {
+          stroke: $value;
+          fill: currentColor;
+      }
+    }
+  }
+
+  .alert-white {
+    background-color: $white;
+    box-shadow: 0 0 4px 0 rgba(213, 205, 205, 0.5);
+    color: color-yiq($white);
+
+    .feather {
+        stroke: $white;
+        fill: color-yiq($white);
+    }
+
+    .close {
+        opacity: 1;
+        text-shadow: none;
+    }
+  }

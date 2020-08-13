@@ -1,0 +1,12 @@
+.form-card {
+    padding: 40px 65px;
+    @extend .shadow;
+
+    @media (max-width: 767px) {
+        padding: 20px 30px;
+    }
+}
+
+.card-shadow {
+    box-shadow: 0 2px 30px 0 rgba(207, 207, 207, 0.5);
+}

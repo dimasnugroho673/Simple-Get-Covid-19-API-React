@@ -1,0 +1,118 @@
+.form-control-rounded {
+    border-radius: calc(#{$input-height} / 2);
+}
+
+// Additional styles for validation states
+
+.was-validated .form-control:valid, .form-control.is-valid {
+    color: $form-feedback-valid-color;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    color: $form-feedback-invalid-color;
+}
+
+.input-group-text{
+    background-color: transparent;
+    border: 0;
+    svg, img {
+        height: 12px;
+    }
+}
+
+// Custom check box, radio and switches
+
+.custom-checkbox, .custom-radio {
+    padding-left: 2.875rem;
+
+    .custom-control-label {
+        line-height: 1.625rem;
+        cursor: pointer;
+
+        &::before {
+            width: 1.625rem;
+            height: 1.625rem;
+            left: -2.875rem;
+            top: 0;
+            border: 1px solid #d9dfe7;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        &::after {
+            width: 1.625rem;
+            height: 1.625rem;
+            left: -2.875rem;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .custom-control-input {
+        &:disabled {
+            ~ .custom-control-label{
+                cursor: default;
+
+                &::before {
+                    opacity: 0.22;
+                    background-color: #bdbdbd;
+                }
+            }
+        }
+    
+        &:checked ~ {
+            .custom-control-label {
+                &::before {
+                    border: 0;
+                    opacity: 1;
+                    background-color: theme-color('primary');
+                }
+            }
+        }
+    
+        &:disabled:checked {
+            &::before {
+                opacity: 0.49;
+                background-color: theme-color('primary');
+            }
+        }
+    }
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.custom-radio .custom-control-label::after {
+    border: 0;
+    opacity: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffffff' stroke='%230684fe' stroke-width='0' stroke-linecap='round' stroke-linejoin='round' class='feather feather-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3C/svg%3E");
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffffff' stroke='%230684fe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3C/svg%3E");
+}
+
+
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::after {
+    border: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffffff' stroke='%230684fe' stroke-width='0' stroke-linecap='round' stroke-linejoin='round' class='feather feather-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3C/svg%3E");
+}
+
+// Form inline
+
+.form-inline {
+    .form-group {
+        display: flex;
+        flex: 0 0 auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 240px;
+
+        .form-control {
+            width: 100%;
+        }
+
+    }
+}

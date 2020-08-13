@@ -1,0 +1,23 @@
+.pagination {
+    .page-item {
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.page-link {
+    border-radius: 0.25rem;
+    border: 1px solid theme-color('primary');
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: theme-color('primary');
+
+    .feather {
+        height: 12px;
+        width: 12px;
+    }
+}

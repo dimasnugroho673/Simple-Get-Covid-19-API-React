@@ -1,0 +1,55 @@
+@mixin badge-soft-variant($color) {
+    color: $color;
+    background-color: rgba($color, 0.2);
+
+    @at-root a#{&} {
+        @include hover-focus() {
+            color: $color;
+            background-color: darken(rgba($color, 0.2), 10%);
+        }
+
+        &:focus,
+        &.focus {
+            outline: 0;
+            box-shadow: 0 0 0 $badge-focus-width rgba($color, .05);
+        }
+    }
+}
+
+@mixin badge-outline-variant($color) {
+    color: $color;
+    // background-color: rgba($color, 0.2);
+    border: 1px solid $color;
+
+    @at-root a#{&} {
+        @include hover-focus() {
+            color: color-yiq($color);
+            background-color: $color;
+        }
+
+        &:focus,
+        &.focus {
+            outline: 0;
+            box-shadow: 0 0 0 $badge-focus-width rgba($color, .2);
+        }
+    }
+}
+
+@mixin badge-outline-soft-variant($color) {
+    color: $color;
+    // background-color: rgba($color, 0.2);
+    border: 1px solid rgba($color, 0.2);
+
+    @at-root a#{&} {
+        @include hover-focus() {
+            color: color-yiq(rgba($color, 0.2));
+            background-color: rgba($color, 0.2)
+        }
+
+        &:focus,
+        &.focus {
+            outline: 0;
+            box-shadow: 0 0 0 $badge-focus-width rgba($color, .05);
+        }
+    }
+}

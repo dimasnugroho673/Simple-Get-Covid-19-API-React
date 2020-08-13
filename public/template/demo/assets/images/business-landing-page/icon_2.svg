@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon_2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lead-UI-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Lead-UI--Business-landing-page" transform="translate(-591.000000, -2075.000000)" stroke="#5D3FFF" stroke-width="2">
+            <g id="icon_2" transform="translate(591.000000, 2076.000000)">
+                <g id="Group" transform="translate(-0.000000, -0.000000)">
+                    <path d="M15.0000001,6.66666669 L15.8333334,6.66666669 C17.6742826,6.66666669 19.1666667,8.15905087 19.1666667,10 C19.1666667,11.8409492 17.6742826,13.3333334 15.8333334,13.3333334 L15.0000001,13.3333334" id="Path"></path>
+                    <path d="M1.66666667,6.66666669 L15.0000001,6.66666669 L15.0000001,14.1666667 C15.0000001,16.0076159 13.5076159,17.5000001 11.6666667,17.5000001 L5.00000002,17.5000001 C3.15905085,17.5000001 1.66666667,16.0076159 1.66666667,14.1666667 L1.66666667,6.66666669 Z" id="Path"></path>
+                    <line x1="5.00000002" y1="0.833333337" x2="5.00000002" y2="3.33333335" id="Path"></line>
+                    <line x1="8.33333337" y1="0.833333337" x2="8.33333337" y2="3.33333335" id="Path"></line>
+                    <line x1="11.6666667" y1="0.833333337" x2="11.6666667" y2="3.33333335" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

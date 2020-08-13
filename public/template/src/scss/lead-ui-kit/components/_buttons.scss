@@ -1,0 +1,25 @@
+button:focus {
+    outline: none;
+}
+
+.btn-rounded {
+    border-radius: 24px;
+}
+
+.btn{
+    padding: 15px 28px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+}
+
+// Button variations
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant(rgba($value, 0.6));
+
+        @if ($color == secondary){
+            color: rgba($black, 0.6);
+        }
+    }
+}

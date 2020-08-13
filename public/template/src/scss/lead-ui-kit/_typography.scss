@@ -1,0 +1,162 @@
+.font-weight-semibold {
+    font-weight: $font-weight-semibold;
+}
+
+.display-1 {
+    line-height: 1.39;
+}
+
+.display-2 {
+    line-height: 1.25;
+}
+
+.display-3 {
+    line-height: 1.16;
+}
+
+.display-4 {
+    line-height: 1.21;
+}
+
+.text-gray {
+    color: color('gray');
+}
+
+p {
+    line-height: 1.69;
+}
+
+.blockquote {
+    
+    font-size: 20px;
+    line-height: 1.5;
+    p{
+        line-height: inherit;
+        padding-left: 26px;
+        padding-right: 26px;
+        border-left: 3px solid transparent;
+    }
+
+    &-footer {
+        color: inherit;
+        font-size: inherit;
+
+        &::before {
+            content: "";
+        }
+    }
+}
+
+.small {
+    font-size: 75%;
+}
+
+@each $color, $value in $theme-colors {
+    .blockquote-#{$color} {
+       p{
+           border-left-color: $value;
+       } 
+    }
+}
+
+ul.list-custom {
+    list-style: none;
+
+    li {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2335ac80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 16 16 12 12 8'%3E%3C/polyline%3E%3Cline x1='8' y1='12' x2='16' y2='12'%3E%3C/line%3E%3C/svg%3E");
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: -35px;
+            top: 2px;
+        }
+    }
+}
+
+ul.list-checked {
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 14px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fe3f3e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check-circle'%3E%3Cpath d='M22 11.08V12a10 10 0 1 1-5.93-9.14'%3E%3C/path%3E%3Cpolyline points='22 4 12 14.01 9 11.01'%3E%3C/polyline%3E%3C/svg%3E");
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: -35px;
+            top: 2px;
+        }
+    }
+}
+
+ul.list-arrow {
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 14px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2335ac80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 16 16 12 12 8'%3E%3C/polyline%3E%3Cline x1='8' y1='12' x2='16' y2='12'%3E%3C/line%3E%3C/svg%3E");
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: -35px;
+            top: 2px;
+        }
+    }
+}
+
+ul.list-ckeck-soft {
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 14px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: #9ceacd;
+            position: absolute;
+            left: -35px;
+            top: 2px;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 6px;
+            border: 2px solid transparent;
+            border-color: transparent transparent #35ac80 #35ac80;
+            position: absolute;
+            left: -29px;
+            top: 9px;
+            transform: rotate(-45deg);
+        }
+    }
+}

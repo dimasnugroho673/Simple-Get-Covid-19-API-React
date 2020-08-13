@@ -1,0 +1,234 @@
+.nav-stacked {
+    flex-direction: column;
+}
+
+.nav-tabs {
+    .nav-link {
+        padding: 16px 24px;
+        color: $gray;
+        font-weight: $font-weight-normal;
+        border-top-width: 2px;
+
+        &:hover {
+            border-color: transparent;
+            border-bottom-color: theme-color();
+            transition: border 0.3 ease-in-out;
+        }
+    }
+
+    .nav-link.active,
+    .show>.nav-link {
+        color: $black;
+        font-weight: $font-weight-semibold;
+        border-top-color: theme-color(primary);
+
+        &:hover {
+            border-color: theme-color(primary) $border-color transparent;
+        }
+        
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .nav-pills-#{$color} {
+        .nav-link.active,
+        .show > .nav-link {
+            color: color-yiq($value);
+            background-color: $value;
+        }
+    }
+}
+
+.nav-tabs-collapse {    
+    flex-direction: column;
+    border-bottom: none;
+    border-left: 1px solid $border-color;
+
+    .nav-item {
+        margin-bottom: 0;
+        margin-left: -1px;
+    }
+
+    .nav-link {
+        border-top-width: 1px;
+        border-right-width: 2px;
+
+        &:hover {
+            border-bottom-color: transparent;
+            border-left-color: theme-color();
+        }
+    }
+
+    .nav-link.active,
+    .show>.nav-link {
+        border-color: $border-color theme-color() $border-color $white;
+
+        &:hover {
+            border-color: $border-color theme-color(primary) $border-color transparent;
+        }
+        
+    }
+
+    &.nav-tabs- {
+        @each $color, $value in $theme-colors {
+            &#{$color} {
+                .nav-link {
+                    &:hover {
+                        border-bottom-color: transparent;
+                        border-left-color: $value;
+                    }
+                }
+            
+                .nav-link.active,
+                .show>.nav-link {
+                    border-color: $border-color $value $border-color $white;
+            
+                    &:hover {
+                        border-color: $border-color $value $border-color transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@each $infix, $breakpoint in $grid-breakpoints {
+    .nav-tabs-collapse- {
+        @include media-breakpoint-down($infix) {
+
+            &#{$infix}{
+                flex-direction: column;
+                border-bottom: none;
+                border-left: 1px solid $border-color;
+
+                .nav-item {
+                    margin-bottom: 0;
+                    margin-left: -1px;
+                }
+
+                .nav-link {
+                    border-top-width: 1px;
+                    border-right-width: 2px;
+
+                    &:hover {
+                        border-bottom-color: transparent;
+                        border-left-color: theme-color();
+                    }
+                }
+
+                .nav-link.active,
+                .show>.nav-link {
+                    border-color: $border-color theme-color() $border-color $white;
+
+                    &:hover {
+                        border-color: $border-color theme-color(primary) $border-color transparent;
+                    }
+
+                }
+
+                &.nav-tabs- {
+
+                    @each $color,
+                    $value in $theme-colors {
+                        &#{$color} {
+                            .nav-link {
+                                &:hover {
+                                    border-bottom-color: transparent;
+                                    border-left-color: $value;
+                                }
+                            }
+
+                            .nav-link.active,
+                            .show>.nav-link {
+                                border-color: $border-color $value $border-color $white;
+
+                                &:hover {
+                                    border-color: $border-color $value $border-color transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-tabs-collapse-xs {
+    @media (max-width: 575px) {
+        flex-direction: column;
+        border-bottom: none;
+        border-left: 1px solid $border-color;
+
+        .nav-item {
+            margin-bottom: 0;
+            margin-left: -1px;
+        }
+
+        .nav-link {
+            border-top-width: 1px;
+            border-right-width: 2px;
+
+            &:hover {
+                border-bottom-color: transparent;
+                border-left-color: theme-color();
+            }
+        }
+
+        .nav-link.active,
+        .show>.nav-link {
+            border-color: $border-color theme-color() $border-color $white;
+
+            &:hover {
+                border-color: $border-color theme-color(primary) $border-color transparent;
+            }
+
+        }
+
+        &.nav-tabs- {
+
+            @each $color,
+            $value in $theme-colors {
+                &#{$color} {
+                    .nav-link {
+                        &:hover {
+                            border-bottom-color: transparent;
+                            border-left-color: $value;
+                        }
+                    }
+
+                    .nav-link.active,
+                    .show>.nav-link {
+                        border-color: $border-color $value $border-color $white;
+
+                        &:hover {
+                            border-color: $border-color $value $border-color transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+.nav-tabs- {
+    @each $color, $value in $theme-colors {
+        &#{$color} {
+            .nav-link {
+                &:hover {
+                    border-color: transparent;
+                    border-bottom-color: $value;
+                }
+            }
+        
+            .nav-link.active,
+            .show>.nav-link {
+                border-top-color: $value;
+        
+                &:hover {
+                    border-color: $value $border-color transparent;
+                }
+            }
+        }
+    }
+}
